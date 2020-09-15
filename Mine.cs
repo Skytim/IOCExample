@@ -2,11 +2,15 @@ namespace IOCExample
 {
     public class Mine
     {
-        public Aunt aunt = new Aunt();
+        private readonly IAunt _aunt;
+        public Mine(IAunt aunt)
+        {
+            _aunt = aunt;
+        }
 
         public void Room()
         {
-            aunt.Swapping();
+            _aunt.Swapping();
         }
     }
 }

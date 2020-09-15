@@ -2,11 +2,11 @@ using System;
 
 namespace IOCExample
 {
-    public class Aunt
+    public class Aunt : IAunt
     {
         public void Swapping()
         {
-           Console.WriteLine("Swapping it...");
+            Console.WriteLine("Swapping it...");
         }
     }
 }
